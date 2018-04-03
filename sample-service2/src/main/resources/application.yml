@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: sample-service2
+server:
+  port: 8092
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8081/eureka/

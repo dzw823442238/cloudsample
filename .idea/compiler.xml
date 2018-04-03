@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="cloudsample" />
+        <module name="sample-eureka" />
+        <module name="sample-service1" />
+        <module name="sample-service2" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="cloudsample" target="1.8" />
+      <module name="sample-eureka" target="1.8" />
+      <module name="sample-service1" target="1.8" />
+      <module name="sample-service2" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>
