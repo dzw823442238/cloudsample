@@ -1,0 +1,28 @@
+spring:
+  application:
+    name: sample-eureka-ha
+---
+spring:
+  profiles: peer1
+server:
+  port: 8083
+eureka:
+  instance:
+    hostname: peer1
+  client:
+    #register-with-eureka: false
+    #fetch-registry: true
+    service-url:
+      defaultZone: http://peer2:8082/eureka
+
+---
+spring:
+  profiles: peer2
+server:
+  port: 8082
+eureka:
+  instance:
+    hostname: peer2
+  client:
+    service-url:
+      defaultZone: http://peer1:8083/eureka

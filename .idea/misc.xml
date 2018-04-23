@@ -6,7 +6,9 @@
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/sample-eureka/pom.xml" />
         <option value="$PROJECT_DIR$/sample-service1/pom.xml" />
-        <option value="$PROJECT_DIR$/sample-service2/pom.xml" />
+        <option value="$PROJECT_DIR$/sample-consumer/pom.xml" />
+        <option value="$PROJECT_DIR$/sample-provider-user/pom.xml" />
+        <option value="$PROJECT_DIR$/sample-eureka-ha/pom.xml" />
       </list>
     </option>
   </component>
@@ -15,21 +17,5 @@
   </component>
   <component name="SvnConfiguration">
     <configuration>C:\Users\lenovo\AppData\Roaming\Subversion</configuration>
-  </component>
-  <component name="masterDetails">
-    <states>
-      <state key="ProjectJDKs.UI">
-        <settings>
-          <last-edited>1.8</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-    </states>
   </component>
 </project>

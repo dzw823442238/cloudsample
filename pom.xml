@@ -6,7 +6,11 @@
 
     <groupId>com.cloud.sample</groupId>
     <artifactId>cloud-sample</artifactId>
+    <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
+    <modules>
+        <module>sample-model</module>
+    </modules>
 
     <parent>
         <groupId>org.springframework.boot</groupId>
