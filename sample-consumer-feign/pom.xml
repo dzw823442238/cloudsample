@@ -4,11 +4,11 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>com.cloud.sample</groupId>
-	<artifactId>sample-consumer</artifactId>
+	<artifactId>sample-consumer-feign</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
-	<name>sample-consumer</name>
+	<name>sample-consumer-feign</name>
 	<description>Demo project for Spring Boot</description>
 
 	<parent>
@@ -46,6 +46,13 @@
 		<dependency>
 			<groupId>org.springframework.cloud</groupId>
 			<artifactId>spring-cloud-starter-ribbon</artifactId>
+			<version>RELEASE</version>
+		</dependency>
+
+		<!--feign REST调用 -->
+		<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-starter-feign</artifactId>
 			<version>RELEASE</version>
 		</dependency>
 

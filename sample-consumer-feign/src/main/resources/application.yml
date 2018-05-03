@@ -2,14 +2,10 @@ server:
   port: 8070
 spring:
   application:
-    name: sample-consumer
+    name: sample-consumer-feign
 eureka:
   client:
     service-url:
       defaultZone: http://127.0.0.1:8081/eureka/
   instance:
     prefer-ip-address: true
-sample-provider-user:
-  ribbon:
-    NFLoadBalancerRuleClassName: com.netflix.loadbalancer.RandomRule
-

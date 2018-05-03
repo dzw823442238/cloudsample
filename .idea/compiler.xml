@@ -7,20 +7,26 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="sample-consumer" />
+        <module name="sample-consumer-feign" />
         <module name="sample-eureka" />
         <module name="sample-eureka (1)" />
+        <module name="sample-eureka-ha" />
         <module name="sample-model" />
         <module name="sample-provider-user" />
+        <module name="sample-provider-user2" />
         <module name="sample-service1" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="cloudsample" target="1.8" />
       <module name="sample-consumer" target="1.8" />
+      <module name="sample-consumer-feign" target="1.8" />
       <module name="sample-eureka" target="1.8" />
       <module name="sample-eureka (1)" target="1.8" />
+      <module name="sample-eureka-ha" target="1.8" />
       <module name="sample-model" target="1.8" />
       <module name="sample-provider-user" target="1.8" />
+      <module name="sample-provider-user2" target="1.8" />
       <module name="sample-service1" target="1.8" />
       <module name="sample-service2" target="1.8" />
     </bytecodeTargetLevel>

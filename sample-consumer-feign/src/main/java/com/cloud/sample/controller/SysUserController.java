@@ -1,5 +1,6 @@
 package com.cloud.sample.controller;
 
+import com.cloud.sample.feign.UserFeignClient;
 import com.cloud.sample.model.SysUser;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -25,7 +26,7 @@ public class SysUserController {
 
 
     @Autowired
-    private RestTemplate restTemplate;
+    private UserFeignClient userFeignClient;
 
     @Autowired
     private DiscoveryClient discoveryClient;
@@ -35,7 +36,7 @@ public class SysUserController {
 
     @GetMapping("/user/{id}")
     public SysUser findById(@PathVariable Integer id){
-        return this.restTemplate.getForObject("http://sample-provider-user/user/"+id,SysUser.class);
+        return this.userFeignClient.findById(id);
     }
 
     @GetMapping("/user-instance")
