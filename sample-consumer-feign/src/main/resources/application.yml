@@ -9,3 +9,6 @@ eureka:
       defaultZone: http://127.0.0.1:8081/eureka/
   instance:
     prefer-ip-address: true
+logging:
+  level:
+    com.cloud.sample.feign.UserFeignClient: debug
