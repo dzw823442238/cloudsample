@@ -2,7 +2,7 @@ spring:
   application:
     name: sample-provider-user
   datasource:
-    url: jdbc:mysql://192.168.1.5:3306/cloudsample?useUnicode=true&characterEncoding=utf8
+    url: jdbc:mysql://127.0.0.1:3306/cloudsample?useUnicode=true&characterEncoding=utf8
     username: root
     password: 123456
     driver-class-name: com.mysql.jdbc.Driver

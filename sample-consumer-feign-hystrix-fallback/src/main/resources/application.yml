@@ -1,0 +1,17 @@
+server:
+  port: 8071
+spring:
+  application:
+    name: sample-consumer-feign-hystrix-fallback
+eureka:
+  client:
+    service-url:
+      defaultZone: http://127.0.0.1:8081/eureka/
+  instance:
+    prefer-ip-address: true
+logging:
+  level:
+    com.cloud.sample.feign.UserFeignClient: debug
+feign:
+  hystrix:
+    enabled: true

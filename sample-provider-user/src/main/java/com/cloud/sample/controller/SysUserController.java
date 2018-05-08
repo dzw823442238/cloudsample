@@ -16,7 +16,7 @@ public class SysUserController {
     private SysUserService sysUserService;
 
     @GetMapping("/{id}")
-    public SysUser getUser(@PathVariable Integer id, @RequestParam String loginName){
+    public SysUser getUser(@PathVariable Integer id, @RequestParam(required = false) String loginName){
         SysUser sysUser = sysUserService.selectSysUser(id);
         return sysUser;
     }
