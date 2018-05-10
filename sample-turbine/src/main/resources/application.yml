@@ -1,0 +1,15 @@
+server:
+  port: 8031
+spring:
+  application:
+    name: sample-turbine
+eureka:
+  client:
+    service-url:
+      defaultZone: http://127.0.0.1:8081/eureka
+  instance:
+    prefer-ip-address: true
+turbine:
+  app-config: sample-consumer-feign-hystrix-fallback
+  cluster-name-expression: new String('default')
+  instanceUrlSuffix: /hystrix.stream

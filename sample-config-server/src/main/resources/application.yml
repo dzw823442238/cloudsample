@@ -1,0 +1,10 @@
+server:
+  port: 8060
+spring:
+  application:
+    name: sample-config-server
+  cloud:
+    config:
+      server:
+        git:
+          uri:
