@@ -7,4 +7,9 @@ spring:
     config:
       server:
         git:
-          uri:
+          uri: https://github.com/dzw823442238/cloudsample
+          username: dzw823442238
+          password: deng19921102
+          search-paths: sample-config-repo
+          clone-on-start: true
+
