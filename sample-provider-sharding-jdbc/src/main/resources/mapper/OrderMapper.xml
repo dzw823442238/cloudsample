@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.cloud.sample.dao.SysUserMapper" >
+
+    <resultMap id="orderMap" type="com.cloud.sample.model.Order">
+
+    </resultMap>
+
+    <select id="selectOrder" resultMap="orderMap">
+        select * from order
+        <where>
+            1=1 and
+            <if test="orderId != null">
+                and order_id=#{orderId}
+            </if>
+            <if test="userId != null">
+                and user_id = #{userId}
+            </if>
+        </where>
+
+    </select>
+
+    <insert id="insertOrder" >
+
+        insert into order(order_id,user_id,status) values(#{order_id},#{userId},#{status})
+    </insert>
+
+    <update id="updateOrder" >
+        update order set status=#{status} where order_id=#{orderId}
+    </update>
+
+    <delete id="deleteOrder">
+        delete from order where order_id=#{orderId}
+    </delete>
+
+</mapper>

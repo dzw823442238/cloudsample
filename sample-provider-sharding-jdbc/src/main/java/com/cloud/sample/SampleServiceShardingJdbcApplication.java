@@ -3,16 +3,17 @@ package com.cloud.sample;
 import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.autoconfigure.transaction.jta.JtaAutoConfiguration;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 
 
 @EnableDiscoveryClient
-@SpringBootApplication
 @MapperScan("com.cloud.sample.dao")
-public class SampleService1Application {
+@SpringBootApplication(exclude = JtaAutoConfiguration.class)
+public class SampleServiceShardingJdbcApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(SampleService1Application.class, args);
+		SpringApplication.run(SampleServiceShardingJdbcApplication.class, args);
 	}
 }
